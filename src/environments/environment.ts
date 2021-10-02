@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api:"http://localhost:9094"
+  api:"https://zf5fe3270-zc6642171-gtw.qovery.io"
 };
 
 /*
