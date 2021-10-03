@@ -9,8 +9,11 @@ import {Page} from "./page";
 export class EventService {
     constructor(public http: HttpClient,public config:Config ) { }
 
+
     search(term:string = '',page:number = 0,limit:number = 50):Observable<Page<Event>> {
         let url:string = this.config.api + "/rest/event/search";
+
+        console.log(url);
         const params = new HttpParams()
         .set('page', String(page))
         .set('term',term)

@@ -4,6 +4,6 @@ export class Config {
     this._api = environment.api;
   }
   get api(){
-    return this._api;
+    return this._api.replace("/undefined","");
   }
 }
